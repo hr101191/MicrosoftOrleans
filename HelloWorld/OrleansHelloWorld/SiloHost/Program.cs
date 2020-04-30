@@ -67,7 +67,7 @@ namespace SiloHost
                 .UseOrleans(siloBuilder =>
                 {
                     siloBuilder
-                        .UseLocalhostClustering()
+                        .UseLocalhostClustering() //Hosts Silo on tcp port 111111 and allow client connections on tcp port 30000 by default
                         .UsePerfCounterEnvironmentStatistics()
                         .ConfigureApplicationParts(parts => parts.AddFromApplicationBaseDirectory()) //This is necessary for auto discovery of all grains referenced by this silo host 
                         .UseDashboard(options =>

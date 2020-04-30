@@ -1,15 +1,10 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
+using Orleans;
+using Orleans.Configuration;
 
 namespace ApiClient
 {
@@ -25,6 +20,7 @@ namespace ApiClient
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddSingleton(CreateOrleansClient()); //Add the orleans client dependency to be used by controller classes
             services.AddControllers();
         }
 
@@ -46,6 +42,23 @@ namespace ApiClient
             {
                 endpoints.MapControllers();
             });
+        }
+
+        private IClusterClient CreateOrleansClient()
+        {
+            var clientBuilder = new ClientBuilder()
+                .UseLocalhostClustering() //Connects to tcp port 30000 by default
+                .Configure<ClusterOptions>(options =>
+                {
+                    options.ClusterId = "dev";
+                    options.ServiceId = "ApiClient";
+                })
+                .ConfigureApplicationParts(parts => parts.AddFromApplicationBaseDirectory());
+
+            var client = clientBuilder.Build();
+
+            client.Connect().Wait();
+            return client;
         }
     }
 }

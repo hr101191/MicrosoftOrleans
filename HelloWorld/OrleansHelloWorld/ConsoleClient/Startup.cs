@@ -35,7 +35,7 @@ namespace ConsoleClient
         private IClusterClient CreateOrleansClient()
         {
             var clientBuilder = new ClientBuilder()
-                .UseLocalhostClustering()
+                .UseLocalhostClustering() //Connects to tcp port 30000 by default
                 .Configure<ClusterOptions>(options =>
                 {
                     options.ClusterId = "dev";
