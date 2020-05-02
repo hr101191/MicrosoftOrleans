@@ -2,3 +2,4 @@
 * text=auto
 
 *.cs text diff=csharp
+*.sql linguist-detectable=false
