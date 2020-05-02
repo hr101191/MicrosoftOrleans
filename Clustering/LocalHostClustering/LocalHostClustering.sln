@@ -3,17 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30002.166
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdminSilo", "AdminSilo\AdminSilo.csproj", "{A121AAA4-0D68-4020-A675-A6DD5BA00FE9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdminSilo", "AdminSilo\AdminSilo.csproj", "{A121AAA4-0D68-4020-A675-A6DD5BA00FE9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SiloHost1", "SiloHost1\SiloHost1.csproj", "{B32F352E-5AD8-4BDE-B9E6-C23325521ECE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SiloHost1", "SiloHost1\SiloHost1.csproj", "{B32F352E-5AD8-4BDE-B9E6-C23325521ECE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SiloHost2", "SiloHost2\SiloHost2.csproj", "{943F2AEB-6E05-4FD1-9985-8B3C143522C7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SiloHost2", "SiloHost2\SiloHost2.csproj", "{943F2AEB-6E05-4FD1-9985-8B3C143522C7}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Grains", "Grains\Grains.csproj", "{8A793FCD-1C37-47CA-8560-DA6394DEF679}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GrainInterfaces", "GrainInterfaces\GrainInterfaces.csproj", "{9300CBC2-762E-439A-B4A5-7BEC182F2804}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiClient", "ApiClient\ApiClient.csproj", "{6C2543D7-F84B-4384-AEC7-6AEC7198FBE3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiClient", "ApiClient\ApiClient.csproj", "{C819526A-40CF-46AF-BA6A-5D4DA982E550}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,10 +41,10 @@ Global
 		{9300CBC2-762E-439A-B4A5-7BEC182F2804}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9300CBC2-762E-439A-B4A5-7BEC182F2804}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9300CBC2-762E-439A-B4A5-7BEC182F2804}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6C2543D7-F84B-4384-AEC7-6AEC7198FBE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6C2543D7-F84B-4384-AEC7-6AEC7198FBE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6C2543D7-F84B-4384-AEC7-6AEC7198FBE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6C2543D7-F84B-4384-AEC7-6AEC7198FBE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C819526A-40CF-46AF-BA6A-5D4DA982E550}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C819526A-40CF-46AF-BA6A-5D4DA982E550}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C819526A-40CF-46AF-BA6A-5D4DA982E550}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C819526A-40CF-46AF-BA6A-5D4DA982E550}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

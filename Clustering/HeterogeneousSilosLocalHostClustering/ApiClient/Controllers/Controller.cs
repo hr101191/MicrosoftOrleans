@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
-using GrainInterfaces;
+using GoodbyeGrainInterface;
+using HelloGrainInterface;
 using Microsoft.AspNetCore.Mvc;
 using Orleans;
 
@@ -11,19 +12,28 @@ namespace ApiClient.Controllers
     public class HelloWorldController : ControllerBase
     {
         private readonly IClusterClient clusterClient;
-        private readonly IHelloWorld helloWorldGrain;
+        private readonly IHello helloGrain;
+        private readonly IGoodbye goodbyeGrain;
         public HelloWorldController(IClusterClient clusterClient)
         {
             this.clusterClient = clusterClient;
             //Initialize the grains that the controller instance will use
-            helloWorldGrain = this.clusterClient.GetGrain<IHelloWorld>(new Guid());
+            helloGrain = this.clusterClient.GetGrain<IHello>(new Guid());
+            goodbyeGrain = this.clusterClient.GetGrain<IGoodbye>(new Guid());
         }
 
         [Route("hello")]
         [HttpGet]
         public async Task<string> Hello()
         {
-            return await helloWorldGrain.SayHello();
+            return await helloGrain.SayHello();
+        }
+
+        [Route("goodbye")]
+        [HttpGet]
+        public async Task<string> Goodbye()
+        {
+            return await goodbyeGrain.SayGoodbye();
         }
     }
 }

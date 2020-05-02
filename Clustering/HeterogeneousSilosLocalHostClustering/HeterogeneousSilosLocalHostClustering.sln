@@ -3,23 +3,23 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30002.166
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloGrain", "HelloGrain\HelloGrain.csproj", "{53EC9B61-DA30-41C0-94EE-351B6C805C86}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelloGrain", "HelloGrain\HelloGrain.csproj", "{53EC9B61-DA30-41C0-94EE-351B6C805C86}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloGrainInterface", "HelloGrainInterface\HelloGrainInterface.csproj", "{C8B4FBA0-7440-482B-970B-CB90B6D5BD09}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelloGrainInterface", "HelloGrainInterface\HelloGrainInterface.csproj", "{C8B4FBA0-7440-482B-970B-CB90B6D5BD09}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoodbyeGrain", "GoodbyeGrain\GoodbyeGrain.csproj", "{9078DFDA-BAAF-408D-975A-63B62E8F5C3E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GoodbyeGrain", "GoodbyeGrain\GoodbyeGrain.csproj", "{9078DFDA-BAAF-408D-975A-63B62E8F5C3E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoodbyeGrainInterface", "GoodbyeGrainInterface\GoodbyeGrainInterface.csproj", "{BA9EE29C-DAB4-4AAC-BD8A-4B02315A633D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GoodbyeGrainInterface", "GoodbyeGrainInterface\GoodbyeGrainInterface.csproj", "{BA9EE29C-DAB4-4AAC-BD8A-4B02315A633D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdminSilo", "..\LocalHostClustering\AdminSilo\AdminSilo.csproj", "{98277ED1-72C2-4835-BD13-6F4B9F6BD8C0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdminSilo", "AdminSilo\AdminSilo.csproj", "{98277ED1-72C2-4835-BD13-6F4B9F6BD8C0}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SiloHost1", "..\LocalHostClustering\SiloHost1\SiloHost1.csproj", "{DB9FA0A0-269F-4F08-816E-65DEF73298D7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SiloHost1", "SiloHost1\SiloHost1.csproj", "{DB9FA0A0-269F-4F08-816E-65DEF73298D7}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SiloHost2", "..\LocalHostClustering\SiloHost2\SiloHost2.csproj", "{66F45334-3AA6-4B4A-9697-2EDD2AFDC3B4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SiloHost2", "SiloHost2\SiloHost2.csproj", "{66F45334-3AA6-4B4A-9697-2EDD2AFDC3B4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SiloHost3", "SiloHost3\SiloHost3.csproj", "{96BF7EB1-5656-4FE8-94A7-BB37B1E8681B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SiloHost3", "SiloHost3\SiloHost3.csproj", "{96BF7EB1-5656-4FE8-94A7-BB37B1E8681B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiClient", "..\LocalHostClustering\ApiClient\ApiClient.csproj", "{DFEF3104-2D21-4B1B-B770-FA94ABD12AFE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiClient", "ApiClient\ApiClient.csproj", "{DFEE02E8-E334-4CC5-9AA5-49D2282ACAC5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -59,10 +59,10 @@ Global
 		{96BF7EB1-5656-4FE8-94A7-BB37B1E8681B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{96BF7EB1-5656-4FE8-94A7-BB37B1E8681B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{96BF7EB1-5656-4FE8-94A7-BB37B1E8681B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DFEF3104-2D21-4B1B-B770-FA94ABD12AFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DFEF3104-2D21-4B1B-B770-FA94ABD12AFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DFEF3104-2D21-4B1B-B770-FA94ABD12AFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DFEF3104-2D21-4B1B-B770-FA94ABD12AFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFEE02E8-E334-4CC5-9AA5-49D2282ACAC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFEE02E8-E334-4CC5-9AA5-49D2282ACAC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFEE02E8-E334-4CC5-9AA5-49D2282ACAC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFEE02E8-E334-4CC5-9AA5-49D2282ACAC5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
