@@ -9,8 +9,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\HeterogeneousSilosLocalHostClustering\GoodbyeGrainInterface\GoodbyeGrainInterface.csproj" />
-    <ProjectReference Include="..\..\HeterogeneousSilosLocalHostClustering\HelloGrainInterface\HelloGrainInterface.csproj" />
+    <ProjectReference Include="..\GrainInterfaces\GrainInterfaces.csproj" />
   </ItemGroup>
+
 
 </Project>
