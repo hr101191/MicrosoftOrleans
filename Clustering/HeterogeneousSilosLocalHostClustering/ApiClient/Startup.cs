@@ -56,7 +56,7 @@ namespace ApiClient
                 .Configure<ClusterOptions>(options =>
                 {
                     options.ClusterId = "dev";
-                    options.ServiceId = "BeerAPI";
+                    options.ServiceId = "ApiClient";
                 })
                 /*
                  * ConfigureApplicationParts method is necessary for auto discovery of all grains referenced by this silo host (if Orleans Dashboard is used)

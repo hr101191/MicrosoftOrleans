@@ -20,4 +20,8 @@
     <Folder Include="sql\" />
   </ItemGroup>
   
+  <ItemGroup>
+    <ProjectReference Include="..\GoodbyeGrain\GoodbyeGrain.csproj" />
+  </ItemGroup>
+  
 </Project>
