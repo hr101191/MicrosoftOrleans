@@ -35,5 +35,13 @@ namespace ApiClient.Controllers
         {
             return await goodbyeGrain.SayGoodbye();
         }
+
+
+        [Route("hello-goodbye")]
+        [HttpGet]
+        public async Task<string> GoodbyeFromHelloGrain()
+        {
+            return await helloGrain.SayGoodbyeFromHelloGrain();
+        }
     }
 }

@@ -6,5 +6,6 @@ namespace HelloGrainInterface
     public interface IHello : IGrainWithGuidKey
     {
         Task<string> SayHello();
+        Task<string> SayGoodbyeFromHelloGrain();
     }
 }

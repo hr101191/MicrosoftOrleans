@@ -13,6 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\GoodbyeGrainInterface\GoodbyeGrainInterface.csproj" />
     <ProjectReference Include="..\HelloGrainInterface\HelloGrainInterface.csproj" />
   </ItemGroup>
 
