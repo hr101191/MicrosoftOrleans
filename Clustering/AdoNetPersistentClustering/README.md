@@ -11,3 +11,6 @@ Databse Setup:
 Try it out:
 1) Start the silo hosts in any order. Cluster is coordinate by the state which is updated in the database table "OrleansMembershipTable"
 2) Start ApiClient
+
+Additional notes:
+- Grains (by function) are hosted can be hosted across different Silos and scaled as per requirement. For more details about Heterogeneous silos, please check out this article: https://dotnet.github.io/orleans/Documentation/clusters_and_clients/heterogeneous_silos.html
